@@ -31,6 +31,6 @@ region_southeast = st.number_input('region_southeast', min_value=0, max_value=1)
 region_southwest = st.number_input('region_southwest', min_value=0, max_value=1)
 output=""
 if st.button("Predict"):
-    result = model.predict([[age,sex,bmi,children,smoker,region_northeast,
+    result = gbr.predict([[age,sex,bmi,children,smoker,region_northeast,
                             region_northwest, region_southeast, region_southwest]])
     st.success ('The output of the above is {}'.format(result))
