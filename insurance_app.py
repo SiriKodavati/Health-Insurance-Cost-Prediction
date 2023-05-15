@@ -13,7 +13,8 @@ import pickle as pkl
 
 import pandas as pd
 
-model=pkl.load(open('Gradient_model','rb'))
+model = open('Gradient_model','rb')
+gbr = pickle.load(model)
 
 st.title('---------- Medical Insurance Cost Prediction ---------')
 
